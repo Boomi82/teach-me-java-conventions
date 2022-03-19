@@ -1,26 +1,28 @@
-package powerpackage;
 
 
-import org.junit.Test;
+package powerpackage.PowerFinder;
+import org.junit.*;
 
-public class powertest {
+
+public class PowerFinderTest {
+    
     @Test
-    public void one_raised_to_one_is_onew() {
-        assert powerfinder.OF(1,1) == 1;
+   public void oneRaisedToOneIsOne() {
+        assertThat(powerfinder.Of(1, 1).isEquals(1);
     }
 
     @Test
-    public void twoRaised_to_one_is_2() {
-        assert powerfinder.OF(2,1) == 2;
+    public void twoRaisedToOneIsTwo() {
+        assertThat(powerfinder.Of(2, 1).isEquals(2);
     }
 
     @Test
-    public void two_power_2_is_4() {
-        assert powerfinder.OF(2, 2) == 4;
+    public void twoPowerTwoIsFour() {
+        assertThat(powerfinder.Of(2, 2).isEquals(4);
     }
 
     @Test
-    public void power_of_2_and_3_Is_SIX() {
-        assert powerfinder.OF(3, 2) == 3*3;
+    public void threePowerTwoIsSix() {
+        assertThat(powerfinder.Of(3, 2).isEquals(9);
     }
 }
